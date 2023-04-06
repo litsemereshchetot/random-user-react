@@ -7,7 +7,7 @@ function App() {
   const [user, setUser] = useState(null);
 
   async function fetchUser() {
-    const response = await axios.get('http://127.0.0.1:8080/users');
+    const response = await axios.get('https://randomuser.me/api/');
     const data = response.data.results[0];
     setUser(data);
   }
